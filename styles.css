@@ -170,13 +170,13 @@ body {
     font-size: 1.1rem;
     color: #ccc;
     margin-bottom: 2rem;
-    animation: fadeInUp 1s ease 0.4s both;
+    /* animation: fadeInUp 1s ease 0.4s both; */
 }
 
 .hero-buttons {
     display: flex;
     gap: 1rem;
-    animation: fadeInUp 1s ease 0.6s both;
+    /* animation: fadeInUp 1s ease 0.6s both; */
 }
 
 .btn {
@@ -221,30 +221,37 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    padding: 100px 50px;
 }
 
 .profile-card {
     width: 300px;
-    height: 350px;
+    height: 400px;
     background: linear-gradient(145deg, #2a2a2a, #1e1e1e);
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    /* animation: float 6s ease-in-out infinite; */
+    overflow: hidden;
+    
 }
 
 .profile-img {
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(45deg, var(--primary-color), #e55a2b);
-    border-radius: 50%;
-    position: relative;
+    width: 100%;
+    height: 100%;
+    position: relative; 
+    object-fit: cover;
+    border-radius: 20px;
+
 }
 
 .diya {
     border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .floating-icons {
